@@ -363,6 +363,8 @@ export const FOOTER = {
     { label: "Book a Call", href: "#book-call" },
     { label: "For Your Trade", href: "#for-your-trade" },
     { label: "FAQ", href: "#faq" },
+    { label: "Privacy Policy", href: "/privacy" },
+    { label: "Terms", href: "/terms" },
   ],
   contact: {
     availability: "Available by appointment",
