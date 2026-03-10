@@ -10,7 +10,7 @@ export const NAV_LINKS = [
 ] as const;
 
 export const HERO = {
-  badge: "Done For You — No Tech Skills Required",
+  badge: "Done For You. No Tech Skills Required.",
   headline: {
     line1: "You Will Never Lose a Job",
     line2: "to a",
@@ -18,7 +18,7 @@ export const HERO = {
     line3: "Again.",
   },
   subheadline:
-    "316 Automations builds the system that texts your missed calls back in 60 seconds, qualifies the lead, and books the job — completely done for you.",
+    "316 Automations builds the system that texts your missed calls back in 60 seconds, qualifies the lead, and books the job. Completely done for you.",
   primaryCta: "Book a Free Call →",
   secondaryCta: "See How It Works ↓",
   chips: [
@@ -62,7 +62,7 @@ export const BEFORE_AFTER = {
       "Missed call triggers instantly",
       "Customer gets a text in 60 seconds",
       "Lead is qualified automatically",
-      "Booking link sent — job is yours",
+      "Booking link sent. Job is yours.",
     ],
   },
 };
@@ -71,7 +71,7 @@ export const TIMELINE = {
   label: "The sequence",
   title: "What happens in the next 60 seconds.",
   subtitle:
-    "From the moment your phone rings unanswered to the moment the job is booked — completely automatic.",
+    "From the moment your phone rings unanswered to the moment the job is booked. Completely automatic.",
   steps: [
     {
       time: ":00",
@@ -127,14 +127,14 @@ export const INDUSTRIES = {
       id: "plumbing",
       label: "Plumbing",
       quote:
-        "Burst pipes, clogged drains — plumbing emergencies don't wait. Your system responds in 60 seconds so you're always the first callback they get.",
+        "Burst pipes, clogged drains. Plumbing emergencies don't wait. Your system responds in 60 seconds so you're always the first callback they get.",
       stat: "Average plumbing call value: $200–$800",
     },
     {
       id: "electrical",
       label: "Electrical",
       quote:
-        "Electrical issues feel urgent. When a homeowner calls and hears silence, they move on fast. Be the first to respond — automatically.",
+        "Electrical issues feel urgent. When a homeowner calls and hears silence, they move on fast. Be the first to respond. Automatically.",
       stat: "Average electrical job value: $300–$1,500",
     },
     {
@@ -148,7 +148,7 @@ export const INDUSTRIES = {
       id: "cleaning",
       label: "Cleaning",
       quote:
-        "Recurring cleaning clients are worth thousands per year. Never miss an inquiry — every form fill and call gets an instant follow-up.",
+        "Recurring cleaning clients are worth thousands per year. Never miss an inquiry. Every form fill and call gets an instant follow-up.",
       stat: "Average cleaning client LTV: $1,200–$3,600/yr",
     },
   ],
@@ -165,14 +165,14 @@ export const HOW_IT_WORKS = {
       emoji: "⚡",
       title: "Instant Reply",
       description:
-        "Every missed call, text, or form fill gets a response within 60 seconds — before they call the next business.",
+        "Every missed call, text, or form fill gets a response within 60 seconds. Before they call the next business.",
     },
     {
       num: "02",
       emoji: "✓",
       title: "Lead Qualification",
       description:
-        "Automated conversation captures name, service needed, location, and urgency — so you show up to every call prepared.",
+        "Automated conversation captures name, service needed, location, and urgency. So you show up to every call prepared.",
     },
     {
       num: "03",
@@ -186,14 +186,14 @@ export const HOW_IT_WORKS = {
       emoji: "🔄",
       title: "Follow-Up Sequence",
       description:
-        "Day 1, Day 3, Day 7 touchpoints if no booking. Zero effort from you — the system handles all of it.",
+        "Day 1, Day 3, Day 7 touchpoints if no booking. Zero effort from you. The system handles all of it.",
     },
     {
       num: "05",
       emoji: "📊",
       title: "Lead Log",
       description:
-        "Every lead tracked in Google Sheets: source, status, outcome, and job value — so you always know what's in the pipeline.",
+        "Every lead tracked in Google Sheets: source, status, outcome, and job value. You always know what's in the pipeline.",
     },
     {
       num: "06",
@@ -208,7 +208,7 @@ export const HOW_IT_WORKS = {
 export const ROI_CALCULATOR = {
   title: "How much are missed calls costing you?",
   subtitle:
-    "Move the slider to see your real numbers — most contractors are shocked.",
+    "Move the slider to see your real numbers. Most contractors are shocked.",
   sliderLabel: "I miss about __ calls per week",
   avgJobValue: 600,
   recoveryRate: 0.4,
@@ -217,7 +217,7 @@ export const ROI_CALCULATOR = {
   sliderMax: 20,
   sliderDefault: 5,
   resultLabel: "316 Automations could recover for you:",
-  resultSub: "Based on 40% lead recovery rate — industry average",
+  resultSub: "Based on 40% lead recovery rate, industry average",
   note: "Based on industry-average recovery rates and call-back conversion data. Actual results vary by trade, market, and responsiveness.",
   cta: "Book a Free Call →",
 };
@@ -226,7 +226,7 @@ export const PERFORMANCE_STATS = {
   label: "By the numbers",
   title: "The system performs while you work.",
   subtitle:
-    "These aren't projections — they're what the automation delivers every single day.",
+    "These aren't projections. They're what the automation delivers every single day.",
   stats: [
     {
       emoji: "⚡",
@@ -234,7 +234,7 @@ export const PERFORMANCE_STATS = {
       unit: "s",
       label: "Response time",
       description:
-        "Every missed call gets a text back within 60 seconds — before they can dial a competitor.",
+        "Every missed call gets a text back within 60 seconds. Before they can dial a competitor.",
       variant: "green" as const,
     },
     {
@@ -270,7 +270,7 @@ export const PERFORMANCE_STATS = {
       unit: "/7",
       label: "Always on",
       description:
-        "Nights, weekends, holidays — the system never clocks out. Your business responds even when you're off the clock.",
+        "Nights, weekends, holidays. The system never clocks out. Your business responds even when you're off the clock.",
       variant: "amber" as const,
     },
     {
@@ -279,7 +279,7 @@ export const PERFORMANCE_STATS = {
       unit: "%",
       label: "Done for you",
       description:
-        "You don't build it. You don't maintain it. You don't touch it. We handle everything — permanently.",
+        "You don't build it. You don't maintain it. You don't touch it. We handle everything. Permanently.",
       variant: "navy" as const,
     },
   ],
@@ -292,17 +292,17 @@ export const FAQ = {
     {
       question: "Do I need to be tech-savvy?",
       answer:
-        "Not at all. We handle everything: setup, configuration, and ongoing maintenance. You just keep doing what you do best — running jobs.",
+        "Not at all. We handle everything: setup, configuration, and ongoing maintenance. You just keep doing what you do best. Running jobs.",
     },
     {
       question: "What if I already have voicemail?",
       answer:
-        "62% of callers won't leave a voicemail — they just call the next business on the list. This system reaches them via text before they do, so voicemail becomes irrelevant.",
+        "62% of callers won't leave a voicemail. They just call the next business on the list. This system reaches them via text before they do, so voicemail becomes irrelevant.",
     },
     {
       question: "How fast is setup?",
       answer:
-        "5 business days or less. We've streamlined the entire onboarding process — most clients are live within 3 to 4 days.",
+        "5 business days or less. We've streamlined the entire onboarding process. Most clients are live within 3 to 4 days.",
     },
     {
       question: "Does it work for my trade?",
@@ -312,12 +312,12 @@ export const FAQ = {
     {
       question: "What happens if something breaks?",
       answer:
-        "We monitor everything and fix issues as part of your monthly retainer. You don't need to manage anything or open a single support ticket — we're on it before you even notice.",
+        "We monitor everything and fix issues as part of your monthly retainer. You don't need to manage anything or open a single support ticket. We're on it before you even notice.",
     },
     {
       question: "What does it cost?",
       answer:
-        "Book a call and we'll walk you through pricing based on your business size and call volume. It's structured to pay for itself in the first recovered job — and most clients see ROI in the first week.",
+        "Book a call and we'll walk you through pricing based on your business size and call volume. It's designed to pay for itself in the first recovered job.",
     },
   ],
 };
