@@ -30,7 +30,7 @@ export function Navbar() {
       )}
     >
       <div className="max-w-[1160px] mx-auto px-6 flex items-center justify-between h-[68px]">
-        <a href="#" aria-label="316 Automations home">
+        <a href="/" aria-label="316 Automations home">
           <Logo width={140} height={40} />
         </a>
 
