@@ -119,7 +119,7 @@ export function ContactForm() {
                 onChange={(e) => setSmsConsent(e.target.checked)}
               />
               <label htmlFor="sms-consent" className="text-xs text-text-light leading-[1.6] cursor-pointer">
-                I agree to receive text messages from 316 Automations. Messages may include appointment confirmations, scheduling follow-ups, and service updates. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to cancel. View our{" "}
+                I agree to receive text messages from 316 Automations. Messages may include appointment confirmations, scheduling follow-ups, and service updates. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to cancel. Reply HELP for help. View our{" "}
                 <a href="/privacy" className="text-[#166534] underline underline-offset-2">Privacy Policy</a> and{" "}
                 <a href="/terms" className="text-[#166534] underline underline-offset-2">Terms</a>.
               </label>
