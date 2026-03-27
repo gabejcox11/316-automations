@@ -340,7 +340,7 @@ export const CONTACT_FORM = {
   subtitle:
     "Not ready for a call? Drop your info and we'll text you back within the hour.",
   cta: "Send Message",
-  fine: "We'll never spam you or share your info. Ever.",
+  fine: "We will never sell or share your phone number with third parties.",
   successTitle: "Message sent.",
   successMessage:
     "We got it. Expect a text back within the hour.",

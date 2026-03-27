@@ -5,10 +5,12 @@ import { SectionHeader } from "@/components/shared/section-header";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
 import { CONTACT_FORM, WEBHOOK_URL } from "@/lib/constants";
 
 export function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [smsConsent, setSmsConsent] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -20,6 +22,8 @@ export function ContactForm() {
       phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
       service: (form.elements.namedItem("service") as HTMLInputElement).value,
       message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+      smsConsent: true,
+      smsConsentTimestamp: new Date().toISOString(),
     };
 
     try {
@@ -106,10 +110,25 @@ export function ContactForm() {
               />
             </div>
 
+            <div className="flex items-start gap-3">
+              <Checkbox
+                id="sms-consent"
+                name="sms-consent"
+                required
+                checked={smsConsent}
+                onChange={(e) => setSmsConsent(e.target.checked)}
+              />
+              <label htmlFor="sms-consent" className="text-xs text-text-light leading-[1.6] cursor-pointer">
+                I agree to receive text messages from 316 Automations. Messages may include appointment confirmations, scheduling follow-ups, and service updates. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to cancel. View our{" "}
+                <a href="/privacy" className="text-[#166534] underline underline-offset-2">Privacy Policy</a> and{" "}
+                <a href="/terms" className="text-[#166534] underline underline-offset-2">Terms</a>.
+              </label>
+            </div>
+
             <Button
               type="submit"
-              disabled={status === "sending"}
-              className="w-full bg-green-dark hover:bg-green-mid text-white rounded-full py-3 text-base font-semibold"
+              disabled={status === "sending" || !smsConsent}
+              className="w-full bg-green-dark hover:bg-green-mid text-white rounded-full py-3 text-base font-semibold disabled:opacity-50"
             >
               {status === "sending" ? "Sending..." : CONTACT_FORM.cta}
             </Button>
